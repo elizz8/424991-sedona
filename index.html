@@ -31,6 +31,8 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
 
+      <h2 class="visually-hidden">5 Преимуществ</h2>
+
       <section class="features-blue-one">
         <div class="content">
           <h2>Настоящий городок</h2>
@@ -106,15 +108,49 @@
         </div>
       </section>
 
-      <section class="search-sedona">
-        <section class="modal-search">
-          <p class="search-info">Укажите даты предполагаемой поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-         <form action="https://echo.htmlacademy.ru" method="post">
-       поля формы
-         </form>
-       </section>
-      </section>
-    </main>
+      <sectiom class="map"></section>
+
+        <!--Форма поиска гостиниц начало-->
+      <div class="search-sedona">
+
+          <form action="https://echo.htmlacademy.ru" method="get">
+
+              <div class="input_data">
+                  <label for="check-in">Дата заезда</label>
+                  <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2016">
+              </div>
+              <!--можно ли в див обернуть иконку календаря?<div class="calendar-icon"></div>-->
+
+              <div class="input_data">
+                  <label for="check-out">Дата выезда</label>
+                  <input type="text" name="check-out" id="check-out" placeholder="4 июля 2016">
+              </div>
+            <!--<div class="calendar-icon"></div>--> 
+
+              <div class="half-width">
+                  <label for="adults">Взрослые</label>
+                  <div class="container-minus-plus">
+                      <button class="btn-minus" type="button">-</button>
+                      <input type="text" value="2" id="adults">
+                      <button class="btn-plus" type="button">+</button>
+                  </div>
+              </div>
+
+
+              <div class="half-width-two">
+                  <label for="adults">Дети</label>
+                  <div class="container-minus-plus">
+                      <button class="btn-minus" type="button">-</button>
+                      <input type="text" value="0" id="kids">
+                      <button class="btn-plus" type="button">+</button>
+                  </div>
+              </div>
+
+              <button type="submit">"Найти"</button>
+          </form>
+      </div>
+      <!--Форма поиска конец-->
+  </main>
 
 
     <footer class="main-footer">
@@ -123,9 +159,9 @@
       </div>
       <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="https://twitter.com" aria-label="Twitter"></a></li>
+          <li><a class="social-button" href="https://facebook.com" aria-label="Facebook"></a></li>
+          <li><a class="social-button" href="https://youtube.com" aria-label="YouTube"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">

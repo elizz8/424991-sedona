@@ -23,16 +23,71 @@
     </header>
 
     <main class="main-catalog">
-      <div class="filter">
+        <h2 class="visually-hidden">Фильтр по типологии гостиниц</h2>
+      <!-- Блок фильтров начало-->
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="filter-list">
+          
+          <div class="infrastracture">
             <h2>Инфраструктура:</h2>
-          Бассейн Парковка Wi-Fi Гостиница Мотель Апартаменты
+            <ul>
+                <li>
+                    <input type="checkbox" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="parking">
+                    <label for="parking">Парковка</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="wifi">
+                    <label for="wifi">WI-FI</label>
+                </li>
+            </ul>
           </div>
-         <div class="filter-price">Стоимость в сутки</div>
-      </form>
-    </div>
 
+          <div class="hotel-type">
+            <h2>Тип жилья</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="hotel" checked>
+                    <label for="hotel">Гостиница"</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="motel" checked>
+                    <label for="hotel">Мотель"</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="apart" checked>
+                    <label for="hotel">Апартаменты</label>
+                </li>
+            </ul>
+          </div>
+
+          <div class="range-filter">
+              <h2>Стоимость в сутки (Р):</h2>
+              <div class="from">
+                  <label for="from">От</label>
+                  <input type="text" id="from" value="0">
+              </div>
+              <div class="to">
+                  <label for="to">До</label>
+                  <input type="text" id="to" value="3000">
+              </div>
+              <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+            <!-- можно ли эти круглые котроллеры задать как button?если да то как?-->
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+      
+         <button class="show-btn" type="submit">Показать</button>
+      </div>
+    </form>
+    <!-- Блок фильтров конец-->
+  </main>
+      
 
     <section class="list">
       <div class="result">
@@ -132,9 +187,9 @@
       </div>
       <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+            <li><a class="social-button" href="https://twitter.com" aria-label="Twitter"></a></li>
+            <li><a class="social-button" href="https://facebook.com" aria-label="Facebook"></a></li>
+            <li><a class="social-button" href="https://youtube.com" aria-label="YouTube"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
