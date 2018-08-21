@@ -25,22 +25,22 @@
     <main class="main-catalog">
         <h2 class="visually-hidden">Фильтр по типологии гостиниц</h2>
       <!-- Блок фильтров начало-->
-        <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
           
           <div class="infrastracture">
             <h2>Инфраструктура:</h2>
             <ul>
                 <li>
-                    <input type="checkbox" id="pool" checked>
                     <label for="pool">Бассейн</label>
+                    <input type="checkbox" name="pool" id="pool" checked>
                 </li>
                 <li>
-                    <input type="checkbox" id="parking">
                     <label for="parking">Парковка</label>
+                    <input type="checkbox" name="parking" id="parking">
                 </li>
                 <li>
-                    <input type="checkbox" id="wifi">
                     <label for="wifi">WI-FI</label>
+                    <input type="checkbox" name="wifi" id="wifi">    
                 </li>
             </ul>
           </div>
@@ -49,16 +49,17 @@
             <h2>Тип жилья</h2>
             <ul>
                 <li>
-                    <input type="checkbox" id="hotel" checked>
-                    <label for="hotel">Гостиница"</label>
+                    <label for="hotel">Гостиница</label>
+                    <input type="checkbox" name="hotel" id="hotel" checked>
                 </li>
                 <li>
-                    <input type="checkbox" id="motel" checked>
-                    <label for="hotel">Мотель"</label>
+                    <label for="hotel">Мотель</label>
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    
                 </li>
                 <li>
-                    <input type="checkbox" id="apart" checked>
                     <label for="hotel">Апартаменты</label>
+                    <input type="checkbox" name="apart" id="apart" checked>
                 </li>
             </ul>
           </div>
@@ -67,23 +68,21 @@
               <h2>Стоимость в сутки (Р):</h2>
               <div class="from">
                   <label for="from">От</label>
-                  <input type="text" id="from" value="0">
+                  <input type="text" name="from" id="from" value="0">
               </div>
               <div class="to">
                   <label for="to">До</label>
-                  <input type="text" id="to" value="3000">
+                  <input type="text" name="to" id="to" value="3000">
               </div>
               <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-            <!-- можно ли эти круглые котроллеры задать как button?если да то как?-->
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
               </div>
-      
-         <button class="show-btn" type="submit">Показать</button>
-      </div>
+              <button class="show-btn" type="submit">Показать</button>
+          </div>
     </form>
     <!-- Блок фильтров конец-->
   </main>
