@@ -1,0 +1,53 @@
+body {
+	margin: 0
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+   }
+    
+ a {
+  	text-decoration: none;
+  }  
+ .main-navigation {
+  	font-size: 14px;
+  	line-height: 21px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	color: #000000;
+  	background-color: #f2f2f2;
+  }
+ .site-navigation {
+  	list-style: none;
+  }
+ .site-navigation a {
+  	color: #000000;
+  }
+ div .background-image {
+  	background: #89adcc url("img/bg.jpg") no-repeat center top;
+  } 
+  /* не понимаю почему у меня ничего не отображается.. не получаются фоном картинку поставить..*/
+ .features {
+ 	background-color: #ffffff;
+ 	text-align: center;
+ }
+ .features h1{
+	font-size: 21px;
+	color: #000000;
+	line-height: 26px;
+	font-weight: bold;
+}
+ .features-blue-one {
+ 	color: #ffffff;
+ 	background-color: #81b3d2
+ }
+ .features-white {
+  background-color: #ffffff;
+  text-align: center;
+ }
+
+  
