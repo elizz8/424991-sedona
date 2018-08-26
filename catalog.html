@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+
+  <body class="inner-page">
+
+
     <header class="page-header">
       <nav class="main-navigation">
       <ul class="site-navigation">
@@ -28,8 +31,8 @@
       <form action="https://echo.htmlacademy.ru" method="post">
           
           <div class="infrastracture">
-            <h2>Инфраструктура:</h2>
-            <ul>
+            <h2 class="filter-title">Инфраструктура:</h2>
+            <ul class="filter">
                 <li>
                     <label for="pool">Бассейн</label>
                     <input type="checkbox" name="pool" id="pool" checked>
@@ -46,8 +49,8 @@
           </div>
 
           <div class="hotel-type">
-            <h2>Тип жилья</h2>
-            <ul>
+            <h2 class="filter-title">Тип жилья</h2>
+            <ul class="filter-title">
                 <li>
                     <label for="hotel">Гостиница</label>
                     <input type="checkbox" name="hotel" id="hotel" checked>
@@ -65,7 +68,7 @@
           </div>
 
           <div class="range-filter">
-              <h2>Стоимость в сутки (Р):</h2>
+              <h2 class="filter-title">Стоимость в сутки (Р):</h2>
               <div class="from">
                   <label for="from">От</label>
                   <input type="text" name="from" id="from" value="0">

@@ -1,3 +1,4 @@
+/* index.html*/
 body {
 	margin: 0
 	padding: 0;
@@ -6,48 +7,205 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
+  /* не уверена что светло-серый бэкграунд... может #ffffff лучше?*/
     background-color: #f2f2f2;
     text-transform: uppercase;
    }
-    
+
  a {
   	text-decoration: none;
   }  
+ header, footer {
+  text-align: center;
+ }
+ h2 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+
+ /* header */
+
  .main-navigation {
   	font-size: 14px;
+    list-style: none;
   	line-height: 21px;
   	font-weight: bold;
   	text-transform: uppercase;
   	color: #000000;
-  	background-color: #f2f2f2;
+  	background-color: #ffffff;
   }
+
  .site-navigation {
   	list-style: none;
   }
  .site-navigation a {
   	color: #000000;
+    font-weight: bold;
+    text-decoration: none;
   }
- div .background-image {
-  	background: #89adcc url("img/bg.jpg") no-repeat center top;
+  .site-navigation a:hover {
+    color: #81b3d2;
+  }
+  .site-navigation a:active {
+    color: #766357;
+  }
+  /* не получается сделать коричневой, активной "Гостиницы", что мы находимся на странице */
+/* header ends*/
+
+ .background-image {
+  	background: #deecf5 url("img/bg.jpg") no-repeat center top;
   } 
-  /* не понимаю почему у меня ничего не отображается.. не получаются фоном картинку поставить..*/
  .features {
- 	background-color: #ffffff;
  	text-align: center;
  }
+
  .features h1{
+  color: #000000;
+  background-color: #ffffff
 	font-size: 21px;
-	color: #000000;
 	line-height: 26px;
 	font-weight: bold;
 }
+/* почему-то вдруг пропал голубоватый цвет у блока и стало все серым..непонятно*/
  .features-blue-one {
  	color: #ffffff;
  	background-color: #81b3d2
- }
- .features-white {
-  background-color: #ffffff;
   text-align: center;
  }
+ 
+ .features-white {
+  color: #000000;
+  background-color: #ffffff;
+ }
+ 
+ .features-white h2{
+  color: #000000;
+  background-color: #ffffff;
+ }
+ 
+ .features-blue-two {
+  color: #ffffff;
+  background-color: #81b3d2
+  text-align: center;
+ }
+ .features-grey {
+  color: #000000;
+  background-color: #eeeeee;
+ }
+ .question-container h3{
+  font-size: 30px;
+  color: #000000;
+  background-color: #ffffff;
+   
+ }
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #766457;
+  border: none;
+}
+.button:hover {
+  color: d8d8d8;
+  background-color: #604e43;
+}
+.button:active {
+  color: d8d8d8;
+  background-color: #503e33;
+}
+.input_data input {
+  font: inherit;
+  background: #f2f2f2;
+  border: 1px solid #979797;
+}
+.input_data input:hover {
+  background: #ebebeb;
+}
+.input_data input:focus {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-color: #000000;
+}
+.search-btn {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #81b3d2;
+}
+.search-btn:hover {
+  font-weight: bold;
+  background: #669ec0;
+}
+.search-btn:active {
+  background: #5496BD;
+}
+.map {
+  background-image: url("img/map.jpg");
+}
+
+.insta {
+  text-align: left;
+}
+.social {
+  text-align: center;
+}
+.social ul {
+  list-style: none;
+}
+.footer-copyright {
+  text-align: right;
+}
+
+
+/* catalog.html */
+.inner-page {
+  color: #333333;
+  background-color: #fefefe;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  }  
+
+.infrastructure {
+  background-image: #7d9ab9 url("img/filter_background.jpg") no-repeat center top;
+}
+
+.filter-title h2{
+font-size: 16px;
+color: #ffffff;
+line-height: 21px;
+}
+.filter ul {
+  list-style: none;
+}
+.show-btn {
+font-size:14px;
+text-align: center;
+color: #ffffff;
+background: 0 0;
+border: 2px solid #ffffff;
+
+}
+.show-btn:hover {
+background: #ffffff;
+border: 2px solid #ffffff;
+}
+.result {
+font-size: 21px;
+color: #000000;
+line-height: 26px;
+}
+
+
+
+
+
+
+
+
+ 
 
   
