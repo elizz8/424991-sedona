@@ -1,3 +1,4 @@
+/* index.html*/
 body {
 	margin: 0
 	padding: 0;
@@ -6,9 +7,281 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
+  /* не уверена что светло-серый бэкграунд... может #ffffff лучше?*/
     background-color: #f2f2f2;
     text-transform: uppercase;
-}
-    
-    
+   }
 
+ a {
+  	text-decoration: none;
+  }  
+ 
+ /* header */
+
+ .main-navigation {
+  	font-size: 14px;
+    list-style: none;
+  	line-height: 26px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	color: #000000;
+  	background-color: #ffffff;
+  }
+
+ .site-navigation {
+  	list-style: none;
+  }
+ .site-navigation a {
+  	color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .site-navigation a:hover {
+    color: #81b3d2;
+  }
+  .site-navigation a:active {
+    color: #000000;
+    opacity: 0.3;
+  }
+
+
+/* header ends*/
+
+ .background-image {
+  	background: #deecf5 url("../img/bg.jpg") no-repeat center top;
+    background-position: 0 0;
+  } 
+ .features {
+ 	text-align: center;
+ }
+
+ .features h1{
+  color: #000000;
+  background-color: #ffffff
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+/* почему-то вдруг пропал голубоватый цвет у блока и стало все серым..непонятно*/
+ .features-blue-one {
+ 	color: #ffffff;
+ 	background-color: #81b3d2
+  text-align: center;
+ }
+ 
+ .features-white {
+  color: #000000;
+  background-color: #ffffff;
+ }
+ 
+ .features-white h2{
+  font-size: 21px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+ }
+ 
+ .features-blue-two {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+ }
+ .features-grey {
+  color: #000000;
+  background-color: #eeeeee;
+ }
+ .question-container h3{
+  font-size: 30px;
+  color: #000000;
+  background-color: #ffffff;
+   
+ }
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #766457;
+  border: none;
+}
+.button:hover {
+  color: d8d8d8;
+  background-color: #604e43;
+}
+.button:active {
+  color: d8d8d8;
+  background-color: #503e33;
+}
+.input_data input {
+  font: inherit;
+  background: #f2f2f2;
+  border: 1px solid #979797;
+}
+.input_data input:hover {
+  background: #ebebeb;
+}
+.input_data input:focus {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-color: #000000;
+}
+.search-btn {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #81b3d2;
+}
+.search-btn:hover {
+  font-weight: bold;
+  background: #669ec0;
+}
+.search-btn:active {
+  background: #5496BD;
+}
+.map {
+  background-image: url("../img/map.jpg");
+}
+
+.insta {
+  text-align: left;
+}
+div .social {
+  text-align: center;
+}
+.social ul {
+  list-style: none;
+}
+.footer-copyright {
+  text-align: center;
+}
+
+
+ /* catalog.html */
+.inner-page {
+  color: #333333;
+  background-color: #fefefe;
+  background-repeat: repeat;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  }
+ 
+li .current {
+    color: #766357;
+  }
+/* прописала путь картинки, но все равно не грузится изображение */
+.filters {
+  background: #7d9ab9 url("../img/filter_background.jpg") no-repeat center top;
+}
+
+.filter-title h2{
+font-size: 16px;
+color: #ffffff;
+line-height: 21px;
+}
+.filter ul {
+  list-style: none;
+}
+.show-btn {
+font-size:14px;
+text-align: center;
+color: #ffffff;
+background: 0 0;
+border: 2px solid #ffffff;
+
+}
+.show-btn:hover {
+color: #000000;
+background: #ffffff;
+border: 2px solid #ffffff;
+}
+.result {
+font-size: 21px;
+color: #000000;
+line-height: 26px;
+font-weight: bold;
+}
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting ul {
+list-style: none;
+}
+
+.sorting-list a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dashed #81b3d2;
+}
+/* как правильно задать селектор, чтобы "по цене" осталось голубым цветом, активным? */
+.active a {
+  color: #81b3d2;
+}
+
+.sorting-list a: hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+.sorting-list a: active {
+  color: #000000;
+}
+.hotel-title {
+font-size: 21px;
+color: #000000;
+line-height: 26px;
+font-weight: bold;
+}
+.hotel-title:hover {
+  color: #81b3d2;
+}
+.hotel-title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.btn-blue a {
+ font: inherit;
+ color: #ffffff
+ background-color: #81b3d2; 
+ text-align: center;
+ text-transform: uppercase;
+ vertical-align: middle;
+}
+.btn-brown a {
+ font: inherit;
+ color: #ffffff
+ background-color: #766357; 
+ text-align: center;
+ text-transform: uppercase;
+ vertical-align: middle;
+}
+.btn-blue a:hover {
+  color: #ffffff
+  background-color: #669ec0;
+}
+.btn-blue a:active {
+  color: #ffffff
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+.btn-brown a:hover {
+  color: #ffffff;
+  background-color: #604E43;
+}
+.btn-brown a:active {
+ color: #ffffff
+ background-color: #503e33;
+ opacity: 0.3;
+}
+
+
+
+
+
+
+
+ 
+
+  
