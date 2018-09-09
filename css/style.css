@@ -211,11 +211,11 @@ list-style: none;
   color: #81b3d2;
 }
 
-.sorting-list a: hover {
+.sorting-list a:hover {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
-.sorting-list a: active {
+.sorting-list a:active {
   color: #000000;
 }
 .hotel-title {
@@ -285,16 +285,23 @@ box-sizing: inherit;
  position: relative;
  }
  /*почему-то не делается ширина так как указано...*/
-.main-navigation ul {
+.main-navigation {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 240 px;
+  width: 240px;
+ }
+ .main-navigation ul {
+  padding: 0;
+  margin: 0;
  }
 /* логотип уехал вправо и на логотип наезжает бэкграунд, не знаю как выправить..*/
 
 .page-header-logo {
+  width: 138px;
   position: absolute;
   left: 50%;
+  top: 0;
   margin-left: -53px;
   margin-right: auto;
  }
@@ -321,12 +328,22 @@ box-sizing: inherit;
   padding-top: 61px;
   margin: 0 auto;
  }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .features section {
   display: flex;
   padding: 0;
   margin: 0
   text-align: center;
   justify-content: space-between;
+}
+.features h1{
+  width: 470;
 }
 
 .features-blue-one {
@@ -343,16 +360,41 @@ box-sizing: inherit;
 }
 .features-grey {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-between;  
 }
-.main-footer .container {
+.question {
   display: flex;
+}
+
+.main-footer {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
 .insta {
   width: 166px;
   margin: 0;
   margin-right: 241px;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+ }
+ /* почему-то див filters не реагирует на флекс!..*/ 
+.infrastructure {
+  display: flex;
+}
+.list section {
+  display: flex;
+  flex-direction: row;
+}
+.list .sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotels {
+  display: flex;
 }
 
 
