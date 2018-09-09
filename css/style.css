@@ -7,7 +7,6 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
-  height: 100%;
   background-color: #f2f2f2;
   text-transform: uppercase;
   }
@@ -25,7 +24,6 @@ body {
   	font-weight: bold;
   	text-transform: uppercase;
   	color: #000000;
-  	background-color: #ffffff;
   }
 
  .site-navigation {
@@ -50,7 +48,9 @@ body {
  .background-image {
   	background: #deecf5 url("../img/bg.jpg") no-repeat center top;
     position: relative;
+    padding-top: 70px;
   } 
+
  .features {
  	text-align: center;
  }
@@ -161,7 +161,7 @@ div .social {
  .current a {
     color: #766357;
   }
-/* прописала путь картинки, но все равно не грузится изображение */
+
 .filters {
   background: #7d9ab9 url("../img/filter_background.jpg") no-repeat center top;
 }
@@ -279,22 +279,38 @@ box-sizing: border-box;
 box-sizing: inherit; 
 }
 
-.page-header {
+.container {
  width: 1200px;
  margin: 0 auto;
- position: relative;
+ background-color: #f2f2f2;
  }
- /*почему-то не делается ширина так как указано...*/
-.main-navigation {
+ 
+.main-navigation ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 240px;
- }
- .main-navigation ul {
-  padding: 0;
+  justify-content: space-around;
   margin: 0;
- }
+  padding: 0;
+}
+.site-navigation li {
+  width: 240px; 
+  text-align: center;
+  padding: 14px 0 16px; 
+}
+.site-navigation li:first-child, 
+.site-navigation li:nth-child(2) {
+  text-align: left;
+  padding-left: 72px;
+}
+.site-navigation li:nth-child(2) {
+margin-right: 240px;
+}
+.site-navigation li:nth-child(3)
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
+  text-align: right;
+}
+
 /* логотип уехал вправо и на логотип наезжает бэкграунд, не знаю как выправить..*/
 
 .page-header-logo {
@@ -302,30 +318,19 @@ box-sizing: inherit;
   position: absolute;
   left: 50%;
   top: 0;
-  margin-left: -53px;
+  z-index: 18;
+  margin-left: -69px;
   margin-right: auto;
  }
-
-.left li {
-  text-align: left;
-  padding-left: 72px;
- }
-.left-photo li {
-  text-align: left;
-  padding-left: 72px;
-  margin-right: 240px;
- }
-
 .background-image {
   height: 535px;
   background-size: cover;
  }
-
 .background-image img {
   display: block;
   width: 458;
   height: 352;
-  padding-top: 61px;
+  padding-top: 58px;
   margin: 0 auto;
  }
 .container {
@@ -343,11 +348,22 @@ box-sizing: inherit;
   justify-content: space-between;
 }
 .features h1{
-  width: 470;
+  width: 470px;
 }
 
 .features-blue-one {
   display: flex;
+  width: 400px;
+  height: 256px;
+}
+.features-one-picture {
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  width: 310px;
+  padding: 45px 50px;
+  text-align: center;
 }
 
 .features-white {
@@ -378,7 +394,7 @@ justify-content: space-around;
 }
 .filters {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
  }
  /* почему-то див filters не реагирует на флекс!..*/ 
 .infrastructure {
@@ -395,6 +411,7 @@ justify-content: space-around;
 
 .hotels {
   display: flex;
+  flex-direction: column;
 }
 
 
