@@ -52,6 +52,8 @@ body {
   } 
 
  .features {
+  display: block;
+  width: 100%;
  	text-align: center;
  }
 
@@ -59,7 +61,6 @@ body {
   color: #000000;
   background-color: #ffffff
 	font-size: 21px;
-	line-height: 26px;
 	font-weight: bold;
 }
 
@@ -106,11 +107,11 @@ body {
   border: none;
 }
 .button:hover {
-  color: d8d8d8;
+  color: #d8d8d8;
   background-color: #604e43;
 }
 .button:active {
-  color: d8d8d8;
+  color: #d8d8d8;
   background-color: #503e33;
 }
 .input_data input {
@@ -138,9 +139,6 @@ body {
 }
 .search-btn:active {
   background: #5496BD;
-}
-.map {
-  background-image: url("../img/map.jpg");
 }
 
 .insta {
@@ -209,6 +207,7 @@ list-style: none;
 /* как правильно задать селектор, чтобы "по цене" осталось голубым цветом, активным? */
 .sorting-list .active {
   color: #81b3d2;
+  border: none;
 }
 
 .sorting-list a:hover {
@@ -218,6 +217,7 @@ list-style: none;
 .sorting-list a:active {
   color: #000000;
 }
+
 .hotel-title {
 font-size: 21px;
 color: #000000;
@@ -310,9 +310,6 @@ margin-right: 240px;
   padding-right: 72px;
   text-align: right;
 }
-
-/* логотип уехал вправо и на логотип наезжает бэкграунд, не знаю как выправить..*/
-
 .page-header-logo {
   width: 138px;
   position: absolute;
@@ -330,8 +327,9 @@ margin-right: 240px;
   display: block;
   width: 458;
   height: 352;
-  padding-top: 58px;
-  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 69px;
+  margin-left: 371px;
  }
 .container {
   display: flex;
@@ -339,30 +337,57 @@ margin-right: 240px;
   width: 1200px;
   margin: 0 auto;
 }
-
-.features section {
-  display: flex;
-  padding: 0;
-  margin: 0
-  text-align: center;
-  justify-content: space-between;
+.features {
+  display: block;
+  width: 1200px;
+  padding-top: 59px;
+  margin: 0 auto; 
+  background-color: #ffffff;
 }
-.features h1{
-  width: 470px;
+
+.features h1 {
+  text-align: center;
+  padding: 0 0 17px;
+  margin-left: 365px;
+  margin-right: 340px;
+  width: 467px;
+  line-height: 26px;
+}
+
+.features p {
+  width: 519px;
+  margin-left: 340px;
+}
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .features-blue-one {
   display: flex;
-  width: 400px;
-  height: 256px;
+  width: 100%; 
+  flex-wrap: wrap;
 }
-.features-one-picture {
-  max-width: 100%;
-  height: auto;
+.content h2 {
+margin: 43px 45px 0px;
+vertical-align: baseline;
 }
+.features-one-picture img {
+  width: 800px;
+  max-height: 256px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
 .content {
-  width: 310px;
-  padding: 45px 50px;
+  width: 400px;
+  padding: 35px 55px 0;
   text-align: center;
 }
 
@@ -371,49 +396,120 @@ margin-right: 240px;
   justify-content: space-between;
   text-align: center;
 }
+
+.features-white-items {
+width: 360px;
+padding: 120px 58px;
+text-align: center;
+}
+.features-white h2 {
+  margin-bottom: 30px;
+}
 .features-blue-two {
   display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.features-two-picture {
+  width: 800;
+  max-height: 256px;
+  overflow: hidden;
+  vertical-align: bottom;
 }
 .features-grey {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
+  width: 100%; 
 }
 .question {
   display: flex;
 }
+.map {
+  background-image: url("../img/map.jpg") no-repeat;
+  height: auto;
+  max-width: 100%;
+}
 
 .main-footer {
 display: flex;
-flex-direction: row;
 justify-content: space-around;
+width: 100%;
+margin-bottom: 30px;
+min-height: 216px;
+background: rgba(250,251,246,0.9);
+margin: -120px;
 }
+
 .insta {
   width: 166px;
-  margin: 0;
+  align-items: center;
+  margin-left: 117px;
   margin-right: 241px;
 }
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.question-container {
+  display: block;
+  text-align: center;
+  padding: 50 px 0 0 0;
+  min-height: 115px;
+}
+.question-container h3 {
+  margin-bottom: 35px;
+}
+.button {
+  width: 568px;
+  padding: 28px 0 28px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
 .filters {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+
+ }
+ .filter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
  }
  /* почему-то див filters не реагирует на флекс!..*/ 
 .infrastructure {
-  display: flex;
+  
 }
-.list section {
-  display: flex;
-  flex-direction: row;
+.list {
+  display: block;
+  width: 100%;
+  padding: 30px 72px;
+  border-bottom: 2px solid #e5e5e5; 
+}
+.result {
+  display: inline-block;
 }
 .list .sorting {
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  width: 780px;
+  padding: 36px 0 32px;
+}
+.sorting .sorting-list {
+display: inline-block;
+padding: 0;
+margin: 0;
+vertical-align: top;
 }
 
 .hotels {
   display: flex;
   flex-direction: column;
+  justify-content: space-around; ;
 }
-
 
 
 
