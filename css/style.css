@@ -472,23 +472,44 @@ margin: -120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1200px;
+  width: 100%;
+  min-height: 251px;
 
  }
  .filter-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  padding: 27px 72px;
+  color: #ffffff;
  }
- /* почему-то див filters не реагирует на флекс!..*/ 
-.infrastructure {
-  
+
+.filter-title h2 {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 24px;
 }
+.infrastructure {
+width: 169px;
+vertical-align: top;
+padding: 27px 30px 30px;
+margin-right: 85px;
+}
+.filters .hotel-type {
+width: 169px;
+vertical-align: top;
+padding: 27px 30px 30px;
+margin-left: 0;
+}
+.range-filter {
+  margin-left: 317px;
+}
+
 .list {
   display: block;
   width: 100%;
   padding: 30px 72px;
   border-bottom: 2px solid #e5e5e5; 
+  background-color: #ffffff;
 }
 .result {
   display: inline-block;
