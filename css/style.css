@@ -201,10 +201,9 @@ list-style: none;
 
 .sorting-list a {
   color: #000000;
-  opacity: 0.3;
   border-bottom: 1px dashed #81b3d2;
 }
-/* как правильно задать селектор, чтобы "по цене" осталось голубым цветом, активным? */
+
 .sorting-list .active {
   color: #81b3d2;
   border: none;
@@ -339,24 +338,24 @@ margin-right: 240px;
 }
 .features {
   display: block;
+  position: relative;
   width: 1200px;
-  padding-top: 59px;
+  padding: 50px 360px;
   margin: 0 auto; 
   background-color: #ffffff;
 }
 
 .features h1 {
   text-align: center;
-  padding: 0 0 17px;
-  margin-left: 365px;
-  margin-right: 340px;
-  width: 467px;
+  font-size: 18px;
   line-height: 26px;
+  margin-bottom: 27px;
 }
 
 .features p {
   width: 519px;
   margin-left: 340px;
+  margin: 0;
 }
 .visually-hidden {
 position: absolute;
@@ -434,8 +433,7 @@ text-align: center;
 display: flex;
 justify-content: space-around;
 width: 100%;
-margin-bottom: 30px;
-min-height: 216px;
+padding-bottom: 30px;
 background: rgba(250,251,246,0.9);
 margin: -120px;
 }
@@ -469,17 +467,16 @@ margin: -120px;
 }
 
 .filters {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   min-height: 251px;
-
+  margin: auto;
  }
+
  .filter-form {
   display: flex;
   flex-direction: row;
-  padding: 27px 72px;
+  align-items: flex-start;
+  padding: 27px 72px 30px;
   color: #ffffff;
  }
 
@@ -491,45 +488,51 @@ margin: -120px;
 .infrastructure {
 width: 169px;
 vertical-align: top;
-padding: 27px 30px 30px;
+padding: 0;
 margin-right: 85px;
 }
 .filters .hotel-type {
 width: 169px;
 vertical-align: top;
-padding: 27px 30px 30px;
-margin-left: 0;
+padding: 0;
 }
 .range-filter {
   margin-left: 317px;
 }
 
-.list {
-  display: block;
+.list section {
+  display: flex;
   width: 100%;
-  padding: 30px 72px;
+  padding: 30px 72px 0;
   border-bottom: 2px solid #e5e5e5; 
   background-color: #ffffff;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .result {
-  display: inline-block;
+  display: flex;
 }
-.list .sorting {
-  display: inline-block;
-  width: 780px;
-  padding: 36px 0 32px;
+.list .sorting{
+  display: flex;
 }
-.sorting .sorting-list {
-display: inline-block;
-padding: 0;
-margin: 0;
-vertical-align: top;
+.sorting ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .hotels {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; ;
+  display: block;
+  width: 100%; 
+  background-color: #ffffff;
+  margin: auto;
+}
+.hotel-container {
+padding: 0 72px;
+margin: 2px auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 
