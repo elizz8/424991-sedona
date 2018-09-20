@@ -141,7 +141,7 @@ body {
   background: #5496BD;
 }
 
-.insta {
+.insta a{
   text-align: left;
   font-weight: 700;
   font-size: 21px;
@@ -172,12 +172,41 @@ div .social {
 
 
  /* catalog.html */
- .current a {
+  .site-navigation .current {
     color: #766357;
   }
 
 .filters {
-  background: #7d9ab9 url("../img/filter_background.jpg") no-repeat center top;
+  background: #7d9ab9 url("../img/filter_background.jpg") no-repeat center;
+  background-position: 0 -54px;
+  width: 100%;
+  margin: auto;
+ }
+
+ .filter-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 27px 72px 30px;
+  color: #ffffff;
+ }
+
+.filter-title h2 {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.infrastructure {
+width: 169px;
+vertical-align: top;
+padding: 0;
+margin-right: 85px;
+}
+.filters .hotel-type {
+width: 169px;
+vertical-align: top;
+padding: 0;
 }
 
 .filter-title h2{
@@ -185,22 +214,172 @@ font-size: 16px;
 color: #ffffff;
 line-height: 21px;
 }
-.filter ul {
+.filter-wrapper {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
-.show-btn {
-font-size:14px;
-text-align: center;
-color: #ffffff;
-background: 0 0;
-border: 2px solid #ffffff;
 
+.filter-wrapper label{
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 45px;
 }
-.show-btn:hover {
-color: #000000;
-background: #ffffff;
-border: 2px solid #ffffff;
+
+
+.checkbox:checked + .checkbox-mark{
+  position: absolute;
+  background-image: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
+  left: -40px;
+  top: -1px;
+  cursor: pointer;
 }
+.checkbox + .checkbox-mark{
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  left: -40px;
+  top: -1px;
+  cursor: pointer;
+}
+.checkbox:disabled + .checkbox-mark {
+  position: absolute;
+  background-image: url("../img/svg/checkbox-off-di.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  left: -41px;
+  top: 0;
+  cursor: pointer;
+}
+.checkbox:disabled:checked + .checkbox-mark{
+  position: absolute;
+  background-image: url("../img/svg/checkbox-on-di.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  left: -41px;
+  top: 0;
+  cursor: pointer;
+}
+.range-filter {
+  width: 320px;
+  margin-left: auto; 
+  margin-right: 72px 
+  color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+}
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  
+}
+.price-controls::after { 
+  content: ""; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+    margin-top: -4px;
+    margin-left: 67px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+position: absolute;
+    top: -9px;
+    width: 16px;
+    height: 16px;
+    background-color: #ababab;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+    cursor: pointer;
+    left: 0;
+  }
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+
+/* block founded*/
 .result {
 font-size: 21px;
 color: #000000;
@@ -282,8 +461,6 @@ font-weight: bold;
  background-color: #503e33;
  opacity: 0.3;
 }
-
-
 
 
 /* !Сетки! */
@@ -544,39 +721,6 @@ align-items: center;
   line-height: 26px;
 }
 
-.filters {
-  width: 100%;
-  min-height: 251px;
-  margin: auto;
- }
-
- .filter-form {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 27px 72px 30px;
-  color: #ffffff;
- }
-
-.filter-title h2 {
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 24px;
-}
-.infrastructure {
-width: 169px;
-vertical-align: top;
-padding: 0;
-margin-right: 85px;
-}
-.filters .hotel-type {
-width: 169px;
-vertical-align: top;
-padding: 0;
-}
-.range-filter {
-  margin-left: 317px;
-}
 
 .list  {
   width: 1200px;
@@ -605,7 +749,6 @@ padding: 0;
   display: flex;
   justify-content: space-between;
 }
-
 
 .sorting span {
   margin: 0 40px 0 0;
