@@ -176,7 +176,7 @@ html {
   width: 800px;
   min-height: 256px;
   overflow: hidden;
-  background: url("../img/image1.jpg");
+  background: url("../img/image1.jpg") no-repeat;
   background-position: 0 -78px;
 }
 .content {
@@ -269,7 +269,7 @@ html {
   width: 800px;
   min-height: 256px;
   overflow: hidden;
-  background: url("../img/image2.jpg");
+  background: url("../img/image2.jpg") no repeat;
   background-position: 0 -75px;
 }
 
@@ -393,6 +393,8 @@ html {
 .search-sedona form{
   margin: 43px 55px;
 }
+
+
 .search-sedona input {
   font-weight: 700;
   text-transform: uppercase;
@@ -1243,7 +1245,7 @@ text-decoration: none;
   margin-left: auto;
 }
 
-.stars-amara {
+.four-stars {
   background: url(../img/star.svg) space;
   width: 94px;
   height: 24px;
@@ -1251,7 +1253,7 @@ text-decoration: none;
   margin-top: 1px;
   background-size: 23px 17px;
 }
-.stars-desert {
+.three-stars {
   background: url(../img/star.svg);
   width: 69px;
   height: 20px;
@@ -1262,7 +1264,7 @@ text-decoration: none;
   background-position: top right;
   background-repeat: repeat-x;
 }
-.stars-diablo {
+.two-stars {
   background: url(../img/star.svg);
   width: 42px;
   height: 20px;
