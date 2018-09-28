@@ -269,7 +269,7 @@ html {
   width: 800px;
   min-height: 256px;
   overflow: hidden;
-  background: url("../img/image2.jpg") no repeat;
+  background: url("../img/image2.jpg") no-repeat;
   background-position: 0 -75px;
 }
 
